@@ -38,6 +38,8 @@ public static class GameProgram
     public static void Main()
     {
         var players = CreatePlayers();
-        var round = new Round();
+        var round = new Round(players[0], players[1]);
+
+        round.Play();
     }
 }
