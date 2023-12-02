@@ -2,5 +2,14 @@
 {
     public class Player
     {
+        public string name;
+        public Pokemon[] pokemons;
+
+        public Player(string name, Pokemon[] pokemons)
+        {
+            this.name = name;
+            this.pokemons = pokemons;
+            Console.WriteLine($"Hellow {this.name}");
+        }
     }
 }
