@@ -9,7 +9,6 @@
         {
             this.name = name;
             this.pokemons = pokemons;
-            Console.WriteLine($"Hellow {this.name}");
         }
     }
 }
