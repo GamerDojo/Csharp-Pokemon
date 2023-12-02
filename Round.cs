@@ -12,9 +12,22 @@
             this.player2 = player2;
         }
 
+
         public void StartTurn()
         {
+            player1.DisplayPokemons();
+
+            int idx;
+            do
+            {
+                Console.WriteLine("Select Pokemon:");
+                idx = Console.Read() - '0';
+                Console.Clear();
+            } while (!(idx>=0 && idx<player1.pokemons.Length));
             
+            player1.SetActivePokemon(idx);
+
+            this.winningPlayer = player1;
         }
 
         public void Play()
